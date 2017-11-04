@@ -1,0 +1,2 @@
+cmdhistory=["(run-test 'spell-checker.core-test)" "(clojure.test/run-test 'spell-checker.core-test)" "(run-tests)"]
+eclipse.preferences.version=1

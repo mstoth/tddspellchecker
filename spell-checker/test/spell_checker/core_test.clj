@@ -2,6 +2,8 @@
   (:require [clojure.test :refer :all]
             [spell-checker.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest words-exist
+  (testing "words exists"
+    (is (> 0 (count words)))))
+
+(run-tests)
