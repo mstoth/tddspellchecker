@@ -4,6 +4,6 @@
 
 (deftest words-exist
   (testing "words exists"
-    (is (> 0 (count words)))))
+    (is (> (count words) 0))))
 
 (run-tests)
