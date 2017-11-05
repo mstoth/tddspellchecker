@@ -23,6 +23,10 @@
 
 (deftest min-distance-test
   (testing "a partial distance function should work for spelling and spilling"
-           (is (= (min-distance "Spellling") "Spelling"))))
+           (is (= (min-distance "spellling") "spelling"))))
+
+(deftest apply-test
+  (testing "using apply with min-distance on words" 
+           (is (= (min-distance "about") "about"))))
 
 (run-tests)
