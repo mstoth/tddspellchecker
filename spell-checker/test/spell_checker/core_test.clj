@@ -32,6 +32,6 @@
 (deftest main-with-words
   (testing "using -main will work with words and return suggestions"
            (is (= (with-out-str (-main "spelling")) "correct!\n"))
-                      (is (= (with-out-str (-main "spellling")) "did you mean spelling?"))))
+                      (is (= (with-out-str (-main "spellling")) "did you mean spelling?\n"))))
 
 (run-tests)
