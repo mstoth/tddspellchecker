@@ -21,4 +21,8 @@
   (testing "the function distance should return 0" 
            (is (= (distance "a" "a") 0))))
 
+(deftest min-distance-test
+  (testing "a partial distance function should work for spelling and spilling"
+           (is (= (min-distance "Spellling") "Spelling"))))
+
 (run-tests)
