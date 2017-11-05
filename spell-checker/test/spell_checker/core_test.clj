@@ -11,5 +11,8 @@
 (deftest correct?-exists
   (testing "we have a function called 'correct?'" 
            (is (function? correct?))))
+(deftest correct?-works
+  (testing "correct? works for one known word"
+           (is (= (correct? "a") "a"))))
 
 (run-tests)
