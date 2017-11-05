@@ -29,4 +29,9 @@
   (testing "using apply with min-distance on words" 
            (is (= (min-distance "about") "about"))))
 
+(deftest main-with-words
+  (testing "using -main will work with words and return suggestions"
+           (is (= (with-out-str (-main "spelling")) "correct!\n"))
+                      (is (= (with-out-str (-main "spellling")) "did you mean spelling?"))))
+
 (run-tests)
