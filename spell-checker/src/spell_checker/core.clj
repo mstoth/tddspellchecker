@@ -5,6 +5,6 @@
 (def words (set (map str/trim (str/split-lines (slurp "resources/wordsEn.txt")))))
 (defn correct? [w] (if (contains? words w) (println "correct!") (println "did you mean xy?")))
 (defn -main
-  "I don't do a whole lot ... yet."
+  "I print out 'correct!' if w is in words"
   [& args]
-  (println "Hello, World!"))
+  (correct? (first  args)))
