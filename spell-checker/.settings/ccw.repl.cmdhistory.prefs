@@ -1,2 +1,2 @@
-cmdhistory=["(run-test 'spell-checker.core-test)" "(clojure.test/run-test 'spell-checker.core-test)" "(run-tests)" "words" "(str/split-lines words)" "(clojure.string/split-lines words)" "(count words)" "(count (clojure.string/splitlines words))" "(count (clojure.string/split-lines words))"]
+cmdhistory=["(run-test 'spell-checker.core-test)" "(clojure.test/run-test 'spell-checker.core-test)" "(run-tests)" "words" "(str/split-lines words)" "(clojure.string/split-lines words)" "(count words)" "(count (clojure.string/splitlines words))" "(count (clojure.string/split-lines words))" "(defn correct? [x] (println x))" "(type correct?)" "(ns-unmap *ns* correct?)" "(ns-unmap *ns* 'correct?)"]
 eclipse.preferences.version=1

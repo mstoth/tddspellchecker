@@ -8,5 +8,8 @@
 (deftest words-is-a-set
   (testing "words is a set"
            (is (= (type #{1 2 3}) (type words)))))
+(deftest correct?-exists
+  (testing "we have a function called 'correct?'" 
+           (is (function? correct?))))
 
 (run-tests)
