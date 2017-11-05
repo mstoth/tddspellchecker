@@ -14,5 +14,8 @@
 (deftest correct?-works
   (testing "correct? works for one known word"
            (is (= (with-out-str (correct? "a")) "correct!\n"))))
+(deftest main-works
+  (testing "main- should also work"
+           (is (= (with-out-str (-main "a")) "correct!\n"))))
 
 (run-tests)
