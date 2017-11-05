@@ -17,5 +17,8 @@
 (deftest main-works
   (testing "main- should also work"
            (is (= (with-out-str (-main "a")) "correct!\n"))))
+(deftest distance-works
+  (testing "the function distance should return 0" 
+           (is (= (distance "a" "a") 0))))
 
 (run-tests)
