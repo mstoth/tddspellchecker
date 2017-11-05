@@ -6,7 +6,8 @@
 (def words (set (map str/trim (str/split-lines (slurp "resources/wordsEn.txt")))))
 (defn correct? [w] (if (contains? words w) (println "correct!") (println "did you mean xy?")))
 (defn distance [x y] (StringUtils/getLevenshteinDistance x y))
-(defn min-distance [w] (min-key (partial distance w) "spelling" "spilling"))
+(defn min-distance [w] (apply min-key (partial distance w) words))
+
 (defn -main
   "I print out 'correct!' if w is in words"
   [& args]
