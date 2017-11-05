@@ -13,6 +13,6 @@
            (is (function? correct?))))
 (deftest correct?-works
   (testing "correct? works for one known word"
-           (is (= (correct? "a") "a"))))
+           (is (= (with-out-str (correct? "a")) "correct!\n"))))
 
 (run-tests)

@@ -3,7 +3,7 @@
   (:require [clojure.string :as str]))
 
 (def words (set (map str/trim (str/split-lines (slurp "resources/wordsEn.txt")))))
-(defn correct? [w] (println "did you mean xy?"))
+(defn correct? [w] (if (contains? words w) (println "correct!") (println "did you mean xy?")))
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
